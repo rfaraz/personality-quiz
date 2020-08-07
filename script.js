@@ -7,6 +7,7 @@ var airScore = 0;
 var earthScore = 0;
 
 var result = document.getElementById("result");
+var description = document.getElementById("description");
 var restart = document.getElementById("restart");
 
 //Initiate variables to store all the buttons
@@ -117,23 +118,29 @@ function earth() {
 function getResult() {
   if (fireScore >= 3) {
     result.innerHTML = "You Are Fire!";
+    description.innerHTML = "You have a very vibrant and bold personality! You’re very passionate about your interests and you’ve got the spark inside. You’re not afraid to speak up and stand for what’s right, but you can also be a bit arrogant and stubborn at times.";
   } 
   else if (waterScore >= 3) {
     result.innerHTML = "You Are Water!";
+    description.innerHTML = "You have a very chill and outgoing personality! You don’t believe in planning out your life, and you just enjoy going with the flow. You have an extroverted personality and you get along easily with anyone you meet, but you have trouble staying organized and on task.";
   } 
   else if (airScore >= 3) {
     result.innerHTML = "You Are Air!";
+    description.innerHTML = "You have a quiet and observant personality! You tend to stay focused on one task at a time and you have really large goals for yourself, the sky is your limit. You are really smart and you are very curious about how the things around you work. Most people see you as a very quiet and shy person.";
   } 
   else if (earthScore >= 3) {
     result.innerHTML = "You Are Earth!";
+    description.innerHTML = "You have a very kind and warm personality! You are very kindhearted and down-to-earth. You enjoy being in nature as compared to crowded and metropolitan areas. You can be shy when meeting new people, but once you get to know them, you open up to them. However, at times, you can be very emotional.";
   }
   else {
     result.innerHTML = "All Four Elements Are Within You!";
+    description.innerHTML = "You have a very dynamic and inspiring personality! You are an all-rounder, and you tend to take leadership in group settings. You don’t like following others, and you’re very good at setting an example. However, at times, you don’t focus on yourself and you always put other’s needs above your own.";
   } 
 }
 
 function reset() {
   result.innerHTML = "Your Result Is...";
+  description.innerHTML = "";
   answered = 0;
   fireScore = 0;
   waterScore = 0;
