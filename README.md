@@ -1,6 +1,7 @@
 ## Personality Quiz Starter Project
 
 Remix this starter code or just use it to see how you might get started on your personality quiz.
+- URL: https://personality-quiz-ridafaraz.glitch.me
 
 Click `Show` in the header to see your app live. We recommend choosing the `Next to Code` option so you can view updates to your webpage side-by-side to your code. 
 
